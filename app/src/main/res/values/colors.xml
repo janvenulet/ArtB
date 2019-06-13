@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#FFA000</color>
+    <color name="backgroundColor">#f2dccd</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="stockUp">#00AF00</color>
+    <color name="stockDown">#D81B00</color>
+</resources>

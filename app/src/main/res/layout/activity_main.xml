@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation = "vertical"
+    android:background="@color/backgroundColor"
+
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/stockex"
+        />
+    <LinearLayout
+        android:orientation = "vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation = "vertical"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_width= "wrap_content"
+            android:layout_weight= "1"
+            >
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:src="@drawable/artblogo"
+                />
+
+
+
+            <TextView
+                android:text="Artists of Business"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textSize="27dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:clipToPadding="true"
+            android:gravity="center"
+            android:layout_height="0dp"
+            android:layout_width= "match_parent"
+            android:layout_weight= "2"
+            android:orientation="vertical"
+            >
+            
+            <Button
+                android:id="@+id/start_btn"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="12dp"
+                android:layout_margin="6dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="Start game"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_weight="0.15"
+                android:onClick="playGame"
+                />
+
+            <Button
+                android:id="@+id/setting_btn"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_margin="6dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="Settings"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_weight="0.15"
+                />
+
+            <Button
+                android:id="@+id/how_to_play_btn"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_margin="6dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="How to play"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:onClick="showInstructions"
+
+                android:layout_weight="0.15"
+                />
+
+            <Button
+                android:id="@+id/credits_btn"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_margin="6dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="Credits"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_weight="0.15"
+                android:onClick="showCredits"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

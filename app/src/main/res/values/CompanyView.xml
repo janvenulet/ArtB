@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CompanyView">
+        <attr name="companyText" format="string" />
+        <attr name="indexText" format="string" />
+        <attr name="priceText" format="string" />
+        <attr name="logoImage" format="integer" />
+        <attr name="sharesText" format="string" />
+    </declare-styleable>
+</resources>

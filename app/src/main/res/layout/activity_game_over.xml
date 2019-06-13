@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EntranceActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+
+
+        <TextView
+            android:id="@+id/gameTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:text="GAME OVER "
+            android:layout_centerHorizontal="true"
+            android:textSize="55dp"
+            android:layout_marginTop="80dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignTop="@+id/score"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="85dp"
+            android:background="@drawable/pileofmoney"
+            />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/gameTitle"
+            android:layout_marginTop="130dp"
+            android:textColor="#000"
+            android:text="fsa"
+            android:layout_centerHorizontal="true"
+            android:textSize="27dp"
+            />
+
+
+
+        <Button
+            android:id="@+id/backToMenu_btn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="Back to Menu"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@android:drawable/ic_menu_revert"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

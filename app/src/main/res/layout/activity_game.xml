@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/game_field"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/quarters"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:text="Quarters:"
+            android:gravity="right"
+            android:layout_marginRight="50dp"/>
+
+        <com.example.artb.CompanyView
+            android:id="@+id/apple"
+            android:layout_below="@id/quarters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:companyText="Apple Inc."
+            app:logoImage="@drawable/applelogo"
+            app:priceText="192$"
+            app:indexText="0.0%"
+            app:sharesText="0" />
+
+        <com.example.artb.CompanyView
+            android:id="@+id/samsung"
+            android:layout_below="@id/apple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:companyText="Samsung"
+            app:logoImage="@drawable/samsunglogo"
+            app:priceText="817$"
+            app:indexText="0.0%"
+            app:sharesText="0" />
+
+        <com.example.artb.CompanyView
+            android:id="@+id/intel"
+            android:layout_below="@id/samsung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:companyText="Intel Corp."
+            app:logoImage="@drawable/intellogo"
+            app:priceText="146$"
+            app:indexText="0.0%"
+            app:sharesText="0" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/stats"
+        android:layout_width="match_parent"
+        android:layout_alignBottom="@+id/game_field"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/moneyphoto">
+
+        <TextView
+            android:id="@+id/your_money"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="YOUR MONEY:"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            />
+
+        <TextView
+            android:id="@+id/your_value"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="YOUR VALUE: "
+            android:layout_below="@+id/your_money"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:onClick="backToMenu"
+                android:text="Back to menu"
+                android:drawableLeft="@android:drawable/ic_menu_revert"
+                android:textAllCaps="false"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textAllCaps="false"
+                android:text="Next Quarter"
+                android:drawableRight="@android:drawable/ic_media_play"
+                android:onClick="nextQuarter"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

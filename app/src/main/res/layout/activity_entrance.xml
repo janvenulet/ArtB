@@ -44,7 +44,7 @@
             android:layout_alignTop="@+id/gameTitle"
             android:layout_marginTop="70dp"
             android:textColor="#000"
-            android:text="Venulet Jan, Kowolik Dawid"
+            android:text="Venulet Jan"
             android:layout_centerHorizontal="true"
             android:textSize="20dp"
             />

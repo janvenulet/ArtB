@@ -45,7 +45,7 @@
             android:layout_alignTop="@+id/gameTitle"
             android:layout_marginTop="70dp"
             android:textColor="#000"
-            android:text="Venulet Jan 235542,\nKowolik Dawid 235697\nProwadzący: dr.inż. Mariusz Topolski"
+            android:text="Venulet Jan"
             android:layout_centerHorizontal="true"
             android:textSize="20dp"
             />
